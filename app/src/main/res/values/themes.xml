@@ -1,0 +1,34 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.SixpCalci" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    </style>
+
+    <style name="Theme.SixpCalci" parent="Base.Theme.SixpCalci" />
+    
+    <style name="operatorbutton" parent="commonbutton">
+        <item name="android:textColor">@color/btn2</item>
+    </style>
+
+    <style name="digitbutton" parent="commonbutton">
+
+
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+
+
+    <style name="commonbutton" parent="ShapeAppearanceOverlay.Material3.FloatingActionButton">
+
+        <item name="backgroundTint">@color/white</item>
+        <item name="cornerRadius">36dp</item>
+        <item name="android:layout_width">72dp</item>
+        <item name="android:layout_height">72dp</item>
+        <item name="android:textSize">32dp</item>
+        <item name="android:layout_margin">12dp</item>
+        <item name="elevation">30dp</item>
+
+
+    </style>
+</resources>
