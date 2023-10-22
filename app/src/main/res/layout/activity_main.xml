@@ -7,17 +7,18 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/data_tv"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text=" "
-        android:textSize="28sp"
-        android:id="@+id/data_tv"
         android:layout_marginEnd="12dp"
+        android:text=" "
         android:textAlignment="viewEnd"
         android:textColor="@color/black"
+        android:textSize="28sp"
         app:layout_constraintBottom_toTopOf="@+id/tc"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="SpeakableTextPresentCheck" />
 
 
     <TextView
@@ -68,15 +69,16 @@
 
                 android:onClick="onclearclick"
                 android:text="C" />
+
             <com.google.android.material.button.MaterialButton
+                android:id="@+id/back"
                 style="@style/digitbutton"
                 android:onClick="onbackclick"
                 app:icon="@drawable/baseline_backspace_24"
-                app:iconTint="@color/btn2"
-                android:id="@+id/back"
                 app:iconSize="20dp"
+                app:iconTint="@color/btn2"
 
-                />
+                tools:ignore="SpeakableTextPresentCheck" />
 
             <com.google.android.material.button.MaterialButton
                 style="@style/operatorbutton"
